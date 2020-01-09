@@ -20,5 +20,5 @@ RUN mkdir -p /var/heatmap/geo-heatmap \
 RUN cd /var/heatmap/geo-heatmap \
 	&& pip install -r requirements.txt
 
-WORKDIR /root
+WORKDIR /var/heatmap/geo-heatmap
 ENTRYPOINT ["/bin/bash"]
