@@ -35,7 +35,7 @@ make build-image
 Assuming you have the credentials files in the right places, you should be able to run GAM now.
 
 ```
-make run-intance
+make run-instance
 
 ```
 
