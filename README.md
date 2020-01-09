@@ -41,11 +41,24 @@ make run-intance
 
 After the "make run" command, you will be at a bash prompt, where you can start using the geo-heatmap python commands. 
 
+Example command, assuming your location file is called locations.json
+
 ```
 python /var/heatmap/geo-heatmap/geo_heatmap.py /var/heatmap/location-data/locations.json --output /var/heatmap/location-data/heatmap.html
 ```
 
-This will end with an error because it cannot auto-open your browser. This is fine, just open the heatmap.html file yourself from your host machine.
+This will end with an error like this:
+
+```
+Traceback (most recent call last):
+  File "/var/heatmap/geo-heatmap/geo_heatmap.py", line 230, in <module>
+    if not isTextBasedBrowser(webbrowser.get()):
+  File "/usr/lib/python3.6/webbrowser.py", line 51, in get
+    raise Error("could not locate runnable browser")
+webbrowser.Error: could not locate runnable browser
+```
+
+...because it cannot auto-open your browser. This is fine, just open the heatmap.html file yourself from your host machine.
 
 
 #Maintainer
