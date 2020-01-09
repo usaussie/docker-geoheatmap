@@ -3,16 +3,16 @@
 [Geo-Heatmap](https://github.com/luka1199/geo-heatmap) is a command line tool that uses Python3 to parse Google Location data into aa heatmap.
 
 
-* Visit the [the original repository](https://github.com/luka1199/geo-heatmap)for command-line instructions that go beyond the simple examples provided below.
+* Visit the [the original repository](https://github.com/luka1199/geo-heatmap) for command-line instructions that go beyond the simple examples provided below.
 
 ---
 
 ### Copy your Google Location data into the mounted directory
 
-This is so it's accessible inside the container
+Follow the instructions in the [the original repository](https://github.com/luka1199/geo-heatmap) to download your location data. You should end up with a JSON file called something like "Location History.json" but for ease of use we are referring to it as locations.json in the examples below. Copying it into the location-data folder means that it's accessible inside the container. 
 
 ```
-cp locations.json /path/to/this/repo/location-data/locations.json
+cp /path/to/downloaded/Location\ History.json /path/to/this/repo/location-data/locations.json
 ```
 
 ### Clone the repository:
